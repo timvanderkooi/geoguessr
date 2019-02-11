@@ -1,0 +1,16 @@
+{
+    "name": "Geoguessr",
+    "version": "1.0",
+    "description": "A Chrome extension for Geoguessr",
+    "permissions" : [
+        "http://localhost/" 
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://geoguessr.com/world/play"],
+            "js": ["jquery331.min.js", "addButton.js"],
+            "css": ["modal.css"]
+        }
+    ],
+    "manifest_version": 2
+}
